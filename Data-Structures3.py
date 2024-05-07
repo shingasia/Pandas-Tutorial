@@ -29,8 +29,10 @@ print(df)
 # R3    30    48  -6.666667  Classic New York Style Cheesecake
 # R4    40    64  -5.000000              Strawberry Thyme Tart
 print(repr(df.loc['R1']))
-print(type(df.loc['R1']))   # <class 'pandas.core.series.Series'>
-print(type(df.iloc[3]))     # <class 'pandas.core.series.Series'>
+print(type(df.loc['R1']))       # <class 'pandas.core.series.Series'>
+print(type(df.loc[:,'COL1']))   # <class 'pandas.core.series.Series'>
+print(type(df.loc[:,['COL1']])) # <class 'pandas.core.frame.DataFrame'>
+print(type(df.iloc[3]))         # <class 'pandas.core.series.Series'>
 
 
 # ==================================================================================================================================

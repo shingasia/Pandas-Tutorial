@@ -315,5 +315,9 @@ print(df)
 # [2000000 rows x 11 columns]
 
 
+df.query(R'COLUMN1.isna()')        # COLUMN1 이 NaN인 데이터 조회
+df.query(R'COLUMN1.isnull()')
+df.query(R'not COLUMN1.isna()')    # COLUMN1 이 NaN이 아닌 데이터 조회
+df.query(R'not COLUMN1.isnull()')
 
 
